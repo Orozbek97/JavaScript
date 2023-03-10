@@ -96,12 +96,29 @@
 
 /////77777777                                                // 'age' must be a number ('20')
 
-function user (age) {
-    if ( ){
-        return " WELCOME!!!"
-    } else {
-        return `"${age}" must be a number`
-    }
-}
+//efrg
 
-console.log(user( '23'))
+
+
+
+//////888888                                                               // 'age' must be a string (20)
+                                                                           //  'age' must be older then 23
+// function handleCheckAge (age) {
+//     if (typeof age !== 'string') {
+//         return `${age} must be a string`
+//     }
+//     else if ( age => 23) {
+//         return `${age} must be older then 23`
+//     }
+//     else {
+//         return  'WELCOME'
+//     }
+// }
+//
+// console.log(handleCheckAge(23))
+
+
+///////9999999                                               // today is monday/tuesday/wednesday/thursday/friday weekend
+                                                              // max days of weeks 7
+
+
