@@ -135,5 +135,18 @@
 // console.log(c + e + d)
 
 
-
                         /////-----/////-----/////-----/////-----/////-----/////-----/////-----/////-----/////-----/////-----/////-----/////
+    // function  logIn (age , name , email)  {
+    // if  (age && name && email) {
+    //     const checkemail =email[email.indexOf('@') +1]
+    //     if (age > 18 && name.length >= 5
+    //         && email.includes('@')
+    //         && ( checkemail && checkemail !=='.')){
+    //         return 'ВЕЛКОМ'
+    //     } else {
+    //         return 'эррор'
+    //     }
+    // }  else {
+    //     return 'ЭРРОР'
+    // }
+    // } console.log(logIn( 23 , 'toma' , 'tagaev@.'))
