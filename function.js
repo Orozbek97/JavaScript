@@ -1,6 +1,6 @@
 
 //1                        // строка проверить строку на наличие . и после нее на com или ru
-
+//
 // function yoursite (adress) {
 //     const checkSiteCom = adress[adress.indexOf('com') - 1]
 //     const checkSiteRu = adress[adress.indexOf('ru') - 1]
@@ -74,3 +74,32 @@
 //     }
 //
 // }
+
+// const arr  =[
+//     1, 3, ,4 ,5, 6, 6
+// ]
+// console.log(arr.filter(el => el % 2 === 0))
+
+// const names = ['misha', 'Ivan', 'Petr', 'Niko', 'VasYA', 'masha', 'AFONYA']
+// const namesfilter = (array) => {
+//     return array.filter((name) => name.toLowerCase().startsWith('m'))
+// }
+// console.log(namesfilter(names))
+
+// const num = [2, 3, 4, 5, 6]
+//
+// const numsFilter = (array) => {
+//     return array.map((num) => num %2 ===0 ? 'even' : 'odd')
+// }
+// console.log(numsFilter(num))
+
+// const num = ['we', 'asd', 2, 3, 4, 'user', 5, 6]
+//
+// const numsFilter = (array) => {
+//     return array.filter(el => typeof el === "number")
+//         .map(el => el > 2 && el < 5 ? `${el}`: el)
+//         .reduce((acc, el) =>{
+//             return  acc + + el
+//     },0)
+// }
+// console.log(numsFilter(num))

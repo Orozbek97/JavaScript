@@ -100,3 +100,17 @@
 
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// async function res (id) {
+//     const res = await fetch(`http://swapi.dev/api/people/${id}`)
+//     const result = await res.json()
+//     alert(`Name: ${result.name},\nBirthday: ${result.birth_year}`)
+//     const  vehicles = result.vehicles.map(async (veh)=>{
+//         const vehName = await fetch(veh)
+//         const nameCar = await vehName.json()
+//         console.log(nameCar)
+//         // console.log(veh, 'veh')
+//         // console.log(result.vehicles[0], 'vehicles')
+//     })
+// } res (1)
