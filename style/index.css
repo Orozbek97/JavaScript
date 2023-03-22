@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+button {
+    padding: 20px 30px;
+    border: 0;
+    background-color: #4383c4;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 25%;
+}
+button:hover {
+    background-color: #175ba1;
+}
+.minusButton:hover {
+    background-color: #9a2323;
+}
+.minusButton {
+    background-color: #bd4f4f;
+}
+.delButton{
+    background-color: #33a833;
+}
+.delButton:hover {
+    background-color: green;
+}
+.mulButton {
+    background-color: #cc7a6a;
+}
+.mulButton:hover {
+    background-color: tomato;
+}
+.result {
+    padding: 18px 46px 20px;
+    border: 2px solid green;
+    border-radius: 25%;
+}
+.reset a{
+    padding: 25px 30px;
+    border: 2px solid green;
+    border-radius: 25%;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
