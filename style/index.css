@@ -4,46 +4,45 @@
     padding: 0;
     font-family: 'Exo 2', sans-serif;
 }
-button {
-    padding: 20px 30px;
-    border: 0;
-    background-color: #4383c4;
-    color: aliceblue;
+.container{
+    padding: 80px;
+    width: 500px;
+    margin: 0 auto;
+}
+.buttons {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+.res-del {
+    border: 2px solid black;
+    width: 250px;
+    border-radius: 15px;
+    justify-content: end;
+    padding: 2px 3px 2px 15px;
+    margin-bottom: 15px;
+}
+.cal-btn {
+    width: 50px;
+    height: 50px;
+}
+.button-equal {
+    width: 250px;
     font-size: 25px;
-    font-weight: bold;
-    border-radius: 25%;
 }
-button:hover {
-    background-color: #175ba1;
+.button-delete {
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+    opacity: 50%;
 }
-.minusButton:hover {
-    background-color: #9a2323;
+.operation {
+    background-color: indianred;
+    border: none;
+    border-radius: 8px;
+    color: white;
 }
-.minusButton {
-    background-color: #bd4f4f;
+.operation:hover{
+    background-color: #da7474;
 }
-.delButton{
-    background-color: #33a833;
-}
-.delButton:hover {
-    background-color: green;
-}
-.mulButton {
-    background-color: #cc7a6a;
-}
-.mulButton:hover {
-    background-color: tomato;
-}
-.result {
-    padding: 18px 46px 20px;
-    border: 2px solid green;
-    border-radius: 25%;
-}
-.reset a{
-    padding: 25px 30px;
-    border: 2px solid green;
-    border-radius: 25%;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-}
+
+

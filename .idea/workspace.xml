@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="742ea1ad-8d9f-4ec0-b5b5-55c10ef557bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DOM.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOM.js" beforeDir="false" afterPath="$PROJECT_DIR$/DOM.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/index.css" afterDir="false" />
     </list>
@@ -38,6 +38,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tagae/OneDrive/Рабочий стол/Codify LAB/Lesson's/JavScript&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -63,7 +64,10 @@
       <workItem from="1678868039346" duration="10122000" />
       <workItem from="1678879479668" duration="132000" />
       <workItem from="1678939675522" duration="15974000" />
-      <workItem from="1679458139358" duration="13044000" />
+      <workItem from="1679458139358" duration="13254000" />
+      <workItem from="1679544072747" duration="53000" />
+      <workItem from="1679544144888" duration="5571000" />
+      <workItem from="1679584148742" duration="29256000" />
     </task>
     <servers />
   </component>

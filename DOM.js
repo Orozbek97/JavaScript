@@ -2,52 +2,117 @@
 const buttonPlus = document.querySelector('.plusButton')
 const buttonMinus = document.querySelector('.minusButton')
 const buttonMulti = document.querySelector('.mulButton')
-const buttonDel = document.querySelector('.delButton')
+const buttonDiv = document.querySelector('.divButton')
 const result = document.querySelector('.result')
+const buttonNum = document.querySelectorAll('[data-number]')
+const buttonEqual = document.querySelector('.button-equal')
+const buttonDel = document.querySelector('.button-delete')
+const buttonClear = document.querySelector('.btn-f')
+const buttonPercent = document.querySelector('.perButton')
 
-
-let num = 0;
+let num = '0';
 result.innerText = num
 
-buttonPlus.addEventListener('click', () => {
-    if (num < 15){
-        num += 1
-        result.innerText = num
-        buttonMinus.disabled = false
-    } else {
-        buttonPlus.disabled = true
+buttonDel.addEventListener('click', () => {
+    if (num !== '0') {
+        if (num.length > 1){
+            num = num.slice(0 , -1)
+            result.innerText = num
+        } else {
+            num = '0'
+            result.innerText = num
+            buttonPlus.disabled = false
+            buttonMinus.disabled = false
+        }
     }
+})
+
+buttonClear.addEventListener('click', () => {
+        num = '0';
+        result.innerText = num;
+})
+
+ buttonNum.forEach( button =>  {
+    button.addEventListener('click', () => {
+        if (num === '0') {
+            result.innerText = button.innerText
+        } else {
+            result.innerText = result.innerText + button.innerText
+        }
+        num = result.innerText
+    })
+})
+
+
+    buttonEqual.addEventListener('click', () =>{
+        if (result.innerText.includes('+')){
+            let a = Number(result.innerText.slice(0 , result.innerText.indexOf('+')))
+            let b = Number(result.innerText.slice(result.innerText.indexOf('+') +1, result.innerText.length))
+            result.innerText = a + b
+        } else if (result.innerText.includes('-')) {
+            let a = Number(result.innerText.slice(0 , result.innerText.indexOf('-')));
+            let b = Number(result.innerText.slice(result.innerText.indexOf('-') +1, result.innerText.length));
+            result.innerText = a - b;
+        }
+        else if   (result.innerText.includes('*')){
+            let a = Number(result.innerText.slice(0 , result.innerText.indexOf('*')));
+            let b = Number(result.innerText.slice(result.innerText.indexOf('*') +1 , result.innerText.length));
+            result.innerText = a * b;
+        }
+        else if (result.innerText.includes('÷')) {
+            let a = Number(result.innerText.slice(0, result.innerText.indexOf('÷')));
+            let b = Number(result.innerText.slice(result.innerText.indexOf('÷') +1 , result.innerText.length));
+            result.innerText = a / b;
+        }
+        else if (result.innerText.includes('%')) {
+                let a = Number(result.innerText.slice(0 , result.innerText.indexOf('%')))
+                let b = Number(result.innerText.slice(result.innerText.indexOf('%') +1 , result.innerText.length))
+                result.innerText = a * b / 100
+        }
+    })
+
+buttonPlus.addEventListener('click', () => {
+      if (result.innerText.includes('+')){
+          let a = Number(result.innerText.slice(0 , result.innerText.indexOf('+')))
+          let b = Number(result.innerText.slice(result.innerText.indexOf('+') +1, result.innerText.length))
+          result.innerText = a + b
+      } else {
+          result.innerText = result.innerText + buttonPlus.innerText
+      }
 })
 
 buttonMinus.addEventListener('click', () => {
-    if (num > 0 ){
-        num -= 1
-        result.innerText = num
-        buttonPlus.disabled = false
+    if (result.innerText.includes('-')){
+        let a = Number(result.innerText.slice(0 , result.innerText.indexOf('-')))
+        let b = Number(result.innerText.slice(result.innerText.indexOf('-') +1, result.innerText.length))
+        result.innerText = a - b
     } else {
-        buttonMinus.disabled = true
+        result.innerText = result.innerText + buttonMinus.innerText
     }
 })
-
-
 
 buttonMulti.addEventListener('click', () => {
-    if (num < 100){
-        num *=2
-        result.innerText = num
-        buttonDel.disabled = false
+    if (result.innerText.includes('*')){
+        let a = Number(result.innerText.slice(0 , result.innerText.indexOf('*')))
+        let b = Number(result.innerText.slice(result.innerText.indexOf('*') +1 , result.innerText.length))
+        result.innerText = a *  b
     } else {
-        buttonMulti.disabled = true
+        result.innerText = result.innerText + buttonMulti.innerText
+    }
+})
+//
+buttonDiv.addEventListener('click', () => {
+    if (result.innerText.includes('÷')){
+        let a = Number(result.innerText.slice(0 , result.innerText.indexOf('÷')))
+        let b = Number(result.innerText.slice(result.innerText.indexOf('÷') +1 , result.innerText.length))
+        result.innerText = a / b
+    } else {
+        result.innerText = result.innerText + buttonDiv.innerText
     }
 })
 
-buttonDel.addEventListener('click', () => {
-    if (num >= 1){
-        num /=2
-        result.innerText = num
-        buttonMulti.disabled = false
-    } else {
-        buttonDel.disabled = true
-    }
+buttonPercent.addEventListener('click', () => {
+    result.innerText + buttonPercent.innerText
 })
+
 

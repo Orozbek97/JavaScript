@@ -10,22 +10,45 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <main>
-        <div class="buttons d-flex gap-5 justify-content-center my-5 align-items-center">
-            <button class="plusButton "> + </button>
-            <button class="minusButton"> - </button>
+<main>
+    <div class="container">
+        <h1 class="py-3 fs-1 fw-bold text-info"> CALCULATOR</h1>
+        <div class="buttons res-del">
             <h3 class="result"> </h3>
+            <button class="button-delete btn btn-primary"> d </button>
         </div>
-        <div class="buttons d-flex gap-5 justify-content-center my-5 align-items-center">
-            <button class="mulButton"> * </button>
-            <button class="delButton"> ÷ </button>
-            <h3 class="reset"> <a href="#" onclick="location.reload(); return false;">
-                reset
-            </a></h3>
+        <div class="buttons">
+            <button class="plusButton operation cal-btn "> + </button>
+            <button class="minusButton operation cal-btn "> - </button>
+            <button class="mulButton operation cal-btn "> * </button>
+            <button class="divButton operation cal-btn "> ÷ </button>
+        </div>
+        <div class="buttons">
+            <button data-number class=" cal-btn btn btn-success"> 1 </button>
+            <button data-number class=" cal-btn btn btn-success"> 2 </button>
+            <button data-number class=" cal-btn btn btn-success"> 3 </button>
+            <button data-number class="perButton operation cal-btn"> % </button>
+        </div>
+        <div class="buttons">
+            <button data-number class=" cal-btn btn btn-success"> 4 </button>
+            <button data-number class=" cal-btn btn btn-success"> 5 </button>
+            <button data-number class=" cal-btn btn btn-success"> 6 </button>
+            <button class=" cal-btn btn-f btn btn-secondary"> f </button>
+        </div>
+        <div class="buttons">
+            <button data-number class=" cal-btn btn btn-success"> 7 </button>
+            <button data-number class=" cal-btn btn btn-success"> 8 </button>
+            <button data-number class=" cal-btn btn btn-success"> 9 </button>
+            <button data-number class=" cal-btn btn btn-success"> 0 </button>
+        </div>
+        <div class="buttons">
+            <button class=" button-equal btn btn-warning"> = </button>
         </div>
 
+    </div>
 
-    </main>
-    <script src="DOM.js"></script>
+
+</main>
+<script src="DOM.js"></script>
 </body>
 </html>
